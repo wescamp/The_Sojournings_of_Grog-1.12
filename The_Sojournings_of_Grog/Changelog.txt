@@ -1,3 +1,19 @@
+From version 3.1.0 to 3.1.1:
+* Wired new mainline portraits for Troll Shaman, Troll Warbanner (uses the Shaman one)
+  and Troll Boulderlobber (uses the Rocklobber one).
+* items.cfg, unit-create.cfg: removed [effect] unit_type= . Also replaced some lists of
+  types with a level= filter.
+* Added tr0ll's dialog corrections.
+* All scenarios except B1, B2, B5, B7, C1-Zurg: used {TURNS_RUN_OUT} macro in objectives
+* B5, C1-Zurg: added show_turn_counter=yes in objectives
+* All scenarios: reworked #ifhave blocks checking for UMC Music Book 1
+* unit-create.cfg: removed resilient trait from Desert Shaman
+* Desert Shaman line: removed support for dehydration (that is not used in this campaign),
+  and used mainline Heals and Cures
+* Deleted file utils/utbs-abilities.cfg
+* utils/abilities.cfg, utils/inspire.cfg, units/Kaleh.cfg: removed weapon special name
+  from description=
+
 From version 3.0.2 to 3.1.0:
 * Moved the campaign to the 1.11 series.
 * Ran wmllint and wmlscope.
