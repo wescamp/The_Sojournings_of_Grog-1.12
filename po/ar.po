@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The_Sojournings_of_Grog-1.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-31 09:50-0500\n"
+"POT-Creation-Date: 2013-03-28 16:46-0400\n"
 "PO-Revision-Date: 2012-10-13 04:20+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -1690,7 +1690,7 @@ msgstr ""
 #: The_Sojournings_of_Grog/scenarios/B7-Dragonbane.cfg:135
 #: The_Sojournings_of_Grog/scenarios/B7-Dragonbane.cfg:175
 #: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:92
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:273
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:281
 msgid "Death of Zurg"
 msgstr ""
 
@@ -6005,7 +6005,7 @@ msgstr ""
 
 #. [message]: speaker=narrator
 #: The_Sojournings_of_Grog/scenarios/C1-Flying_Above_the_Sands.cfg:285
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:202
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:210
 msgid ""
 "<span foreground='yellow'>Remember that standing in an oasis will heal your "
 "units by 8 HP.</span>"
@@ -6097,61 +6097,61 @@ msgid "Resist"
 msgstr ""
 
 #. [event]
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:139
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:145
 msgid "Tinry"
 msgstr ""
 
 #. [message]: speaker=Zurg
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:178
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:186
 msgid "Zurg stuck. How Zurg find Elves?"
 msgstr ""
 
 #. [message]: speaker=Tinry
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:183
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:191
 msgid ""
 "Well, the ship hasn't sunk; we can try to repair it. We should explore the "
 "island and..."
 msgstr ""
 
 #. [message]: speaker=Tinry
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:197
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:205
 msgid "Oh no! Those accursed cacti!"
 msgstr ""
 
 #. [message]: speaker=Tinry
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:215
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:223
 msgid "There are <i>more</i> of them?"
 msgstr ""
 
 #. [message]: speaker=Esanoo
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:243
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:251
 msgid "Trolls and Humans stranded upon an island? What has come to pass here?"
 msgstr ""
 
 #. [message]: speaker=Zurg
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:248
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:256
 msgid "Zurg sent by Grog to find Quenoth Elves. We crash boat."
 msgstr ""
 
 #. [message]: speaker=Esanoo
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:253
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:261
 msgid ""
 "You are a messenger of Grog? If that is so then we shall assist, we can "
 "repair your vessel and lead you to the Elves."
 msgstr ""
 
 #. [objective]: condition=win
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:268
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:276
 msgid "Resist for two days while the mermen repair your ship."
 msgstr ""
 
 #. [message]: speaker=Esanoo
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:356
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:364
 msgid "Your vessel is repaired; we shall now take you to the Elves."
 msgstr ""
 
 #. [message]: speaker=Tinry
-#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:438
+#: The_Sojournings_of_Grog/scenarios/C1-Shipwreck.cfg:446
 msgid "My wife, my children, who will care for them now?"
 msgstr ""
 
@@ -9396,162 +9396,162 @@ msgid "The Long Dark (4)"
 msgstr ""
 
 #. [message]: speaker=Grog
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:245
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:248
 msgid "I'm coming Grog-daddy."
 msgstr ""
 
 #. [message]: speaker=Elyssa
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:265
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:268
 msgid "There was so much more to see."
 msgstr ""
 
 #. [message]: speaker=Zurg
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:285
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:288
 msgid "Arghhh."
 msgstr ""
 
 #. [message]: speaker=unit
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:307
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:310
 msgid "I'm coming Eloh...."
 msgstr ""
 
 #. [message]: speaker=unit
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:323
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:326
 msgid "We give you no more bargains."
 msgstr ""
 
 #. [message]: role=doom1
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:344
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:347
 msgid "Ogres nice. Trolls will miss ogres."
 msgstr ""
 
 #. [message]: speaker=Grog
 #. [message]: speaker=Zurg
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:356
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:363
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:359
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:366
 msgid "(annoyed) Silence, Trolls are the best"
 msgstr ""
 
 #. [message]: role=doom1
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:370
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:373
 msgid "(gulp) Sorry."
 msgstr ""
 
 #. [message]: speaker=Grog
 #. [message]: speaker=Zurg
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:385
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:392
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:388
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:395
 msgid "Will miss his brawn"
 msgstr ""
 
 #. [message]: speaker=gryphonboss
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:419
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:422
 msgid "Kraa... us'll elp yoo noo moore."
 msgstr ""
 
 #. [message]: role=doom2
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:440
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:443
 msgid "Speed was good."
 msgstr ""
 
 #. [message]: speaker=Grog
 #. [message]: speaker=Zurg
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:452
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:459
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:455
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:462
 msgid "Silence fool."
 msgstr ""
 
 #. [message]: speaker=Grog
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:474
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:477
 msgid "Grog miss Bird."
 msgstr ""
 
 #. [message]: speaker=Zurg
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:481
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:484
 msgid "We will miss his speed."
 msgstr ""
 
 #. [message]: speaker=Elyssa
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:585
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:588
 msgid "It's a shame to lose so many humans. They are really rather helpful."
 msgstr ""
 
 #. [message]: speaker=$temp_unit.id
 #. [message]: speaker=unit.id
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:629
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:720
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:632
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:723
 msgid "So much death! So much sacrifice!"
 msgstr ""
 
 #. [message]: speaker=Ormron
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:650
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:653
 msgid "Ackkk."
 msgstr ""
 
 #. [message]: speaker=spokesman
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:669
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:672
 msgid "No! Our leader is dead."
 msgstr ""
 
 #. [message]: speaker=spokesman
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:726
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:729
 msgid ""
 "We have been dishonored. So many of our party has died. To death, to wrack, "
 "to ruin."
 msgstr ""
 
 #. [message]: speaker=Grog
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:731
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:734
 msgid "What does human do?"
 msgstr ""
 
 #. [message]: speaker=spokesman
 #. "besmirched" = dirtied, blackened, sullied.
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:737
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:740
 msgid ""
 "We shall die on our own swords in the time honored way. We have besmirched "
 "our own honor."
 msgstr ""
 
 #. [message]: speaker=Grog
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:749
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:752
 msgid "No! Them humans help us lots."
 msgstr ""
 
 #. [message]: speaker=mudcrawler
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:770
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:773
 msgid "Blorgh! Uuurgh!"
 msgstr ""
 
 #. [message]: speaker=Elyssa
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:777
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:780
 msgid "It was a so peculiar creature. I will certainly miss it."
 msgstr ""
 
 #. [message]: speaker=Krunk
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:790
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:793
 msgid "Krunk dies. Krunk was not strong like other Trolls."
 msgstr ""
 
 #. [message]: speaker=Elyssa
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:795
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:798
 msgid "Rest in peace, poor Krunk. I'll miss you."
 msgstr ""
 
 #. [message]: speaker=Zurg
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:800
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:803
 msgid ""
 "White Trolls are so rare, and he was the only one that we had. We lost a "
 "great asset."
 msgstr ""
 
 #. [message]: speaker=Grog
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:805
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:808
 msgid "Krunk had many skills. Krunk dead. Grog will miss Krunk."
 msgstr ""
 
 #. [message]: speaker=Elyssa
-#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:811
+#: The_Sojournings_of_Grog/utils/tsog-deaths.cfg:814
 msgid "I wonder if there are some other White Trolls around the world..."
 msgstr ""
 
