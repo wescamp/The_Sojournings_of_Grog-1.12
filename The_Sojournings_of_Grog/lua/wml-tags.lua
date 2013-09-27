@@ -142,3 +142,78 @@ function wesnoth.wml_actions.get_unit_defense(cfg)
 	end
 end
 
+terrain_table = {}
+-- the following structure is necessary because
+-- * and ^ are math operators in Lua
+terrain_table["Wo"]       = "Ww" --deep to shallow water
+terrain_table["Ss"]       = "Gs" --swamp to savannah
+terrain_table["Gg"]       = "Re" --grass,savannah,flowers,farmland to dirt
+terrain_table["Gg^Efm"]   = "Re"
+terrain_table["Gs"]       = "Re"
+terrain_table["Re^Gvs"]   = "Re"
+terrain_table["Ww^Bw*"]   = "Ww" --water bridge to water
+terrain_table["Ss^Bw*"]   = "Ss" --swamp bridge to swamp
+terrain_table["*^Bw*"]    = "Ww" --any other bridge to water
+terrain_table["Ds"]       = "Dd^Dc" --desert,sand,desert hills,oasis to desert crater
+terrain_table["Dd"]       = "Dd^Dc"
+terrain_table["Hd"]       = "Dd^Dc"
+terrain_table["Dd^Do"]    = "Dd^Dc"
+terrain_table["Gs^F*"]    = "Gs" --savannah based forest to savannah
+terrain_table["Gg^F*"]    = "Gg" --forest to grass
+terrain_table["Hh^F*"]    = "Hh" --forested hills to hills
+terrain_table["Aa^F*"]    = "Aa" --snow forest to grass
+terrain_table["Ha^F*"]    = "Ha" --Snow forested hills to hills
+terrain_table["Aa"]       = "Ai" --snow to ice (looks good!)
+terrain_table["Rr^Vhc"]   = "Rp^Vhcr" --various villages to their ruined counterparts
+terrain_table["Gs^Vh"]    = "Gd^Vhr"
+terrain_table["Hh^Vhh"]   = "Hhd^Vhhr"
+terrain_table["Ha^Vhha"]  = "Hh^Vh" --village snow hills to normal hills
+terrain_table["Ms^Vhha"]  = "Mm^Vhh" --village snow mountains to normal mountains
+terrain_table["Ha^Vca"]   = "Hh^Vc" --village snow hills (orc) to normal hills
+terrain_table["Ha^Voa"]   = "Hh^Vo" --orcish snow hills village to orcish hills village
+terrain_table["Aa^Voa"]   = "Gg^Vo" --orcish snow village to orcish village
+terrain_table["Ss^Vhs"]   = "Gs^Vht" --village swamp to savvanah
+terrain_table["Aa^Vha"]   = "Gg^Vh" --village snow to normal
+terrain_table["Aa^Vea"]   = "Gg^Ve" --village snow to normal
+terrain_table["Uh"]       = "Uu" --cave path,rough,mushrooms to cave
+terrain_table["Ur"]       = "Uu"
+terrain_table["Uu^Uf"]    = "Uu"
+terrain_table["Uu"]       = "Uu^Dr" --cave to rubble
+terrain_table["Ch"]       = "Chr" --castle to ruin
+terrain_table["Kh"]       = "Khr" --keep to ruin
+terrain_table["Ha"]       = "Hh" --snow hills to hills
+terrain_table["Ms"]       = "Mm" --snow mountains to mountains
+terrain_table["Rrc^Vhca"] = "Rr^Vhc" --Snowy Human City Village -> Human City Village
+--Snowy Castle, Fort or Keep -> Castle, Fort or Keep
+terrain_table["Kha"]      = "Kh" --Snowy Human Keep
+terrain_table["Cha"]      = "Chr" --Snowy Human Castle
+terrain_table["Kea"]      = "Ke" --Snowy Encampment Keep
+terrain_table["Cea"]      = "Ce" --Snowy Encampment Keep
+terrain_table["Coa"]      = "Co" --Snowy Orcish Fort
+terrain_table["Koa"]      = "Ko" --Snowy Orcish Keep
+terrain_table["Gd"]       = "Rd" --Dead Grass -> Dry dirt
+terrain_table["Gll"]      = "Rd" --Leaf Litter -> Dry dirt
+-- Mine Rails on cave, cave path, cave hills, water and earth-toned cave -> debris
+terrain_table["Uu^Br*"]   = "Uu^Dr"
+terrain_table["Ur^Br*"]   = "Ur^Dr"
+terrain_table["Uh^Br*"]   = "Uh^Dr"
+terrain_table["Ww^Br*"]   = "Ww" --this one becomes water
+terrain_table["Uue^Br*"]  = "Uue^Dr"
+terrain_table["Iwr"]      = "Iwr^Dr" --Wooden Floor -> Debris
+terrain_table["Uu^Emf"]   = "Uu" --Mushroom Farm on cave -> cave
+terrain_table["Uue^Emf"]  = "Uue" --Mushroom Farm on earth-toned cave -> earth-toned cave
+terrain_table["Uue"]      = "Uue^Dr" --Earth-toned cave -> debris
+terrain_table["W*^Bsb*"]  = "Ww" --stone bridge on water to water
+
+function wml_actions.elyssa_terrain_substitution( cfg )
+	local x = wesnoth.current.event_context.x1
+	local y = wesnoth.current.event_context.y1
+	
+	for key, value in pairs( terrain_table ) do
+		if wesnoth.match_location( x, y, { terrain = key } ) then
+			wesnoth.set_terrain( x, y, value )
+			wml_actions.redraw {}
+			break -- exit on first match
+		end
+	end
+end

@@ -1,3 +1,56 @@
+From version 3.2.0 to 3.2.1:
+* items.cfg: fixed a bug with the speed ring reported by Paulomat4
+
+From version 3.1.2 to 3.2.0:
+* Fixed ellipses to make them compatible with Wesnoth 1.11.6
+* Rock Golem: removed a stray translation= key pointed by wmllint
+* Converted animations to use new compact syntax
+* A2-1: converted a [if][then] to [filter_condition]
+* A1, A2-1, A2-2, A4, A5, A7, B6, C1: remove combined sighted+moveto events (on 1.11 sighted fires also when a enemy unit enters our viewing area)
+* S3: removed unuseful side 2
+* A1, A3, A7: changed enemy leaders to have a long id, instead of only one letter and, maybe, one number
+* B4, B5: added persistency code to human (as in sides with human units) sides
+* A5: deleted one unuseful variable clearing
+* Fixed Dust Recuperation, Heals +2 and Obscures abilites that still had the ability's name as first line of the description
+* Removed unused variations of Desert Elves
+* Moved Heals+2, Obscures, Stun, Dust Recuperation, Inspire and Sustenance to abilities.cfg
+* A5: simplified prisoners and captors creation code by using custom events like functions
+* A5: simplified filter condition of event firing victory
+* Wrapped all units' image paths within double quotes to prevent the + sign being interpreted as the concatenation operator
+* A1: added Whimsical Amulet
+* A1: removed a [endlevel] inside a victory event
+* A2-1: additional gold to sides 2 and 3 is assigned in the next turn after finding the Undead
+* A3: simplified prisoners code
+* Removed unused terrains
+* _main.cfg: added code to allow use of custom terrains in the map editor
+* A3, A4: simplified code to recall bodyguards
+* A5: first comment about bats is fired on turn 5
+* A5: added [scroll_to_unit] in sighted rats, bats, serpent events
+* A5: increased activation spiders radius to 10 hex
+* A6: allowed controlling of allied sides via right-click menu
+* A6: added unrenamable=yes to Jaash and I-gruk
+* A7: simplified prisoners code and placed all of them in one big cell
+* S2: removed unuseful side=2
+* B2: removed a duplicated [endlevel]
+* B3: added two more messages when one saurian is killed
+* B3: removed first_time_only=no from the two "too close to a lizard" events
+* B4: removed a duplicated [endlevel]
+* B5: allowed controlling of allied sides via right-click menu
+* B5: joined two prestart events
+* C2: increased target values for AI side
+* C2: used {QUANTITY} instead of several #ifdef blocks
+* C2: added max_moves=0 to the two siege nagas
+* B7: allowed controlling of allied sides via right-click menu
+* S1, B7: removed orange color for Kaleh's side
+* B7: changed id=dragon to id=Akhenku
+* Renamed images/units/dragon to images/units/dragons, and updated Dragon Lord's .cfg accordingly; also removed the underscore from Dragon Lord unit ID
+* Converted use of IDs spokesman and sidekick to roles
+* Changed Jaash and I-Gruk IDs and related variables to match their names
+* Updated AI code to remove deprecated parameters
+* Converted Elyssa's terrain transformation code to Lua
+* Added SPECIAL_NOTES_STUN to Kaleh
+* Added Italian translation, courtesy of bzame
+
 From version 3.1.1 to 3.1.2:
 * C1-Zurg: fixed a bug that counted the sailors as prisoners.
 
