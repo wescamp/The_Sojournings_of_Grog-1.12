@@ -1,3 +1,12 @@
+From version 3.2.1 to 3.2.2:
+* S3: added and wired Castle-Tirigaz-night story background (made by me using XnView MP)
+* Removed mainlined two suns time of day
+* Removed mainlined Khalifate units (including sprites, portraits and movetypes.cfg)
+* Renamed hack-start.cfg to S0-hack_start.cfg
+* Replaced Cave Spider with Lesser Giant Spider. This unit was taken from Era of Two Suns (although it is available in other add-ons), and its recolored sprite was originally made by Eternal. Credits updated
+* A2-1: replaced Cave Spiders with Lesser Giant Spiders
+* S0, S1: bumped minimum version requirement to 1.11.8
+
 From version 3.2.0 to 3.2.1:
 * items.cfg: fixed a bug with the speed ring reported by Paulomat4
 
