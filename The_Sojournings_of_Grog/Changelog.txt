@@ -1,3 +1,22 @@
+From version 3.2.2 to 3.3.0:
+* Renamed all scenarios file names and IDs to follow mainline conventions.
+* Removed hack start
+* Council of War merged with Defense scenario
+* 06: added a missing translation mark
+* Removed ellipse from Zurg and Elyssa creator macros: it should be handled by IS_HERO
+* 08: removed two unuseful messages
+* tsog-deaths: renamed two argument names
+* 10: removed the "this is the end of chapter 1" message
+* Removed TEAM_COLOR, TEAM_COLOR_CRITICAL and TEAM_COLOR_LOYAL macros, since nowadays we have better ways to mark hero and loyal units (ellipses and overlays)
+* tsog-deaths: simplified code for I-Gruk and Jaash deaths
+* Removed unused ROLEMACRO and RECALLMACRO macro
+* Moved four role related macros to roles.cfg
+* Moved five unit related macros to unit-utils.cfg
+* Converted content of tsog-deaths.cfg to macro TSOG_COMMON_EVENTS
+* Renamed tsog-deaths.cfg to common.cfg
+* 03: added a confirmation message before blasting the bridge into oblivion
+* Bumped minimum version requirement to 1.11.10
+
 From version 3.2.1 to 3.2.2:
 * S3: added and wired Castle-Tirigaz-night story background (made by me using XnView MP)
 * Removed mainlined two suns time of day
